@@ -1,0 +1,18 @@
+syntax = "proto3";
+package stream;
+service StreamService {
+  rpc SimpleFun(RequestData) returns (ResponseData){}
+
+  rpc ServerSideStreamFun(RequestData) returns (stream ResponseData){}
+  
+  rpc ClientSideStreamFun(stream RequestData) returns (ResponseData){}
+  
+  rpc TwoWayStreamFun(stream RequestData) returns (stream ResponseData){}
+}
+message RequestData {
+  string text = 1;
+}
+
+message ResponseData {
+  string text = 1;
+}

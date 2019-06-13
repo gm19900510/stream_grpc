@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//filetransfer/client.py=utf-8
+encoding//stream/simple_client.py=utf-8
+encoding//stream/simple_server.py=utf-8
+encoding//stream/stream_pb2.py=utf-8
